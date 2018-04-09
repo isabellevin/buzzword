@@ -88,12 +88,21 @@ span            {font-size:2em;
                 font-family: 'Roboto', sans-serif;
                 letter-spacing: 0.2em;}
 
+.navbar ul.list-reset {
+  margin:  0;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar ul.list-reset > li {
+  text-align: center;
+  padding: 24px 30px;
+}
+
 .navbar a,
 .dropdown .dropbtn
                {font-size: 16px;
                 color: white;
-                text-align: center;
-                padding: 24px 30px;
                 text-decoration: none;}
 
 .navbar a:hover, .dropdown:hover .dropbtn
