@@ -1,0 +1,136 @@
+nav            {color:#149595;
+                font-family:'Roboto', sans-serif;
+                letter-spacing: 0.1em;}
+
+h1             {color:#048872;
+                font-family:'Roboto', sans-serif;
+                letter-spacing: 0.3em;
+                text-align: center;
+                margin-top:2em;
+                font-size:2.5em;}
+
+h2             {color:#6e1290;
+                font-family:'Roboto', sans-serif;
+                font-size:1.75em;}
+
+h3             {color:#6e1290;
+                font-family:'Roboto', sans-serif;}
+
+p              {color:#6e1290;
+                font-family:'Roboto', sans-serif;
+                font-weight:100;
+                font-size:1.2em;
+                line-height: 1.2em;
+                letter-spacing: 0.03em;}
+
+ul              {color:#6e1290;
+                font-family:'Roboto', sans-serif;
+                font-weight:100;
+                font-size:1.2em;
+                line-height: 1.2em;
+                letter-spacing: 0.03em;}
+
+img            {opacity:1;
+                margin-right:2em;
+                max-width: 100%;
+                height:auto;}
+
+a               {color:#b9a2c3;
+                 text-decoration: none;}
+
+a:hover         {color:deepskyblue;}
+
+
+
+
+
+
+/* making a class */
+.one            {font-size;2em;}
+
+.margin1        {margin-left:10em;
+                 margin-right:10em;}
+
+.margin2        {margin-left:11em;
+                 margin-right:10em;}
+
+#two            {text-decoration: line-through;}
+
+span            {font-size:2em;
+                 color: purple;}
+
+
+
+
+
+/* SCROLL BAR */
+/* width */
+::-webkit-scrollbar 
+                {width: 13px;}
+
+/* Track */
+::-webkit-scrollbar-track 
+                {background:#0C9D86;}
+
+/* Handle */
+::-webkit-scrollbar-thumb 
+                {background:#56C1AD;}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover 
+                {background:#0C9D86;}
+
+
+
+/* NAV BAR */
+.navbar        {overflow: hidden;
+                background-color:#363636;
+                font-family: 'Roboto', sans-serif;
+                letter-spacing: 0.2em;}
+
+.navbar a      {float: left;
+                font-size: 16px;
+                color: white;
+                text-align: center;
+                padding: 24px 30px;
+                text-decoration: none;}
+
+.navbar a:hover, .dropdown:hover .dropbtn 
+                {background-color:#0C9D86;}
+
+.dropdown 
+               {float: left;
+                overflow: hidden;}
+
+.dropdown .dropbtn 
+                {font-size: 16px;    
+                border: none;
+                outline: none;
+                color: white;
+                padding: 14px 16px;
+                background-color: inherit;
+                font-family: inherit;
+                margin: 0;
+                letter-spacing: 0.2em;}
+
+.dropdown-content 
+                {display: none;
+                position: absolute;
+                background-color: #0C9D86;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;}
+
+.dropdown-content a 
+                {float: none;
+                color: white;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;}
+
+.dropdown-content a:hover 
+                {background-color:#048872;}
+
+.dropdown:hover .dropdown-content 
+                { display: block;
