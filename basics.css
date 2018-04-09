@@ -1,6 +1,7 @@
+body           {margin: 0;}
+
 nav            {color:#149595;
-                font-family:'Roboto', sans-serif;
-                letter-spacing: 0.1em;}
+                font-family:'Roboto', sans-serif;}
 
 h1             {color:#048872;
                 font-family:'Roboto', sans-serif;
@@ -20,15 +21,13 @@ p              {color:#6e1290;
                 font-family:'Roboto', sans-serif;
                 font-weight:100;
                 font-size:1.2em;
-                line-height: 1.2em;
-                letter-spacing: 0.03em;}
+                line-height: 1.2em;}
 
 ul              {color:#6e1290;
                 font-family:'Roboto', sans-serif;
                 font-weight:100;
                 font-size:1.2em;
-                line-height: 1.2em;
-                letter-spacing: 0.03em;}
+                line-height: 1.2em;}
 
 img            {opacity:1;
                 margin-right:2em;
@@ -65,72 +64,74 @@ span            {font-size:2em;
 
 /* SCROLL BAR */
 /* width */
-::-webkit-scrollbar 
+::-webkit-scrollbar
                 {width: 13px;}
 
 /* Track */
-::-webkit-scrollbar-track 
+::-webkit-scrollbar-track
                 {background:#0C9D86;}
 
 /* Handle */
-::-webkit-scrollbar-thumb 
+::-webkit-scrollbar-thumb
                 {background:#56C1AD;}
 
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover 
+::-webkit-scrollbar-thumb:hover
                 {background:#0C9D86;}
 
 
 
+.clearfix::after
+                {content: "";
+                display: table;
+                clear: both;}
+
 /* NAV BAR */
-.navbar        {overflow: hidden;
-                background-color:#363636;
+.navbar        {background-color:#363636;
                 font-family: 'Roboto', sans-serif;
                 letter-spacing: 0.2em;}
 
-.navbar a      {float: left;
+.navbar ul.list-reset
+               {margin:  0;
+                padding: 0;
+                list-style: none;}
+
+.navbar > ul.list-reset > li
+               {text-align: center;
+                padding: 24px 30px 0;
+                float:left;}
+
+.navbar a,
+.dropbtn
+               {display: block;
                 font-size: 16px;
                 color: white;
-                text-align: center;
-                padding: 24px 30px;
-                text-decoration: none;}
+                text-decoration: none;
+                padding: 5px 6px 24px;}
 
-.navbar a:hover, .dropdown:hover .dropbtn 
+.navbar a:hover, .dropdown:hover .dropbtn
                 {background-color:#0C9D86;}
 
-.dropdown 
-               {float: left;
-                overflow: hidden;}
+.dropdown
+               {position: relative;}
 
-.dropdown .dropbtn 
-                {font-size: 16px;    
-                border: none;
-                outline: none;
-                color: white;
-                padding: 14px 16px;
-                background-color: inherit;
-                font-family: inherit;
-                margin: 0;
-                letter-spacing: 0.2em;}
-
-.dropdown-content 
+.dropdown-content
                 {display: none;
                 position: absolute;
+                width: calc(100% - 60px);
                 background-color: #0C9D86;
-                min-width: 160px;
                 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
                 z-index: 1;}
 
-.dropdown-content a 
-                {float: none;
+.dropdown-content a
+                {
                 color: white;
                 padding: 12px 16px;
-                text-decoration: none;
                 display: block;
                 text-align: left;}
 
-.dropdown-content a:hover 
+.dropdown-content a:hover
                 {background-color:#048872;}
 
-.dropdown:hover .dropdown-content 
-                { display: block;
+.dropdown:hover .dropdown-content
+                { display: block; }
